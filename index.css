@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+}
+.nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+}
+.header h2{
+font-size: 2rem;
+font-weight: bold;
+color: #fff;
+letter-spacing: 3px;
+}
+.header span{
+    color: rgb(97, 210, 230);
+}
+.nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+}
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+letter-spacing: 3px;
+transition: 0.6s;
+}
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
+li a:hover{
+background-color: rgb(97, 210, 230);
+color: #fff;
+}
+.banner{
+height: 100%;
+width: 100%;
+position: absolute;
+background-image: url(image/18.jpg);
+background-position: center;
+background-size: cover;
+top: 0;
+z-index: -1;
+}
+
+.section{
+    padding-top: 20rem;
+    padding-left: 10rem;
+    display: flex;
+    position: relative;
+    gap: 5rem;
+}
+.img img{
+    height: 30rem;
+    width: 100%;
+    max-width: 400px;
+    transform: translateX(-50);
+    position: absolute;
+    top: -25rem;
+    left: 65rem;
+    border-radius: 50% 50% 37% 63% / 41% 39% 61% 59% ;
+    opacity: 100%;
+    }
+    .img svg{
+        position: absolute;
+        left: 60rem;
+        z-index: -1;
+        height: 40rem;
+        top: -30rem;
+    }
+.inteeact-section{
+    position: relative;
+    transition: transform 500ms ease-in-out;
+}
+.inteeact-section .img svg:hover{
+    transform: scale(-20px);
+    cursor: pointer;
+}
+.intro{
+    right: 50%;
+}
+.intro h2{
+    font-size: clamp(1rem, -0.625rem + 5.2vw, 2.3rem);
+color: #fff;
+position: relative;
+top: -5rem;
+}
+.intro span{
+    color:  rgb(97, 210, 230);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 0.125rem + 4.4vw, 2.6rem); 
+    letter-spacing: .2px;
+}
+.intro h4{
+    color: #fff;
+    width: 30rem;
+    top: -4rem;
+    position: relative;
+    font-size: clamp(0.5rem, 0.1094rem + 1.25vw, 0.8125rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro h1{
+    width: 19ch;
+    animation: typing 2.5s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #fff;
+    color:  rgb(97, 210, 230);
+    font-size: 3.2rem;
+    position: relative;
+    top: -5rem;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+.links{
+        
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28rem;
+    left: 1rem;
+    width: 5rem;
+}
+.links a {
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+    padding-right: 10px;
+    padding: 2.57rem;
+}
+.links a:hover{
+    scale: 1.2;
+}
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+.persue h3{
+    color: aqua;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    bottom: -4rem;
+    position: relative;
+}
+
+.persue p{
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: -4rem;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    background: #2e2c2c;
+}
+.container h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.content p
+{
+    margin-top: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.card{
+    position: relative;
+    min-height: 100vh;
+    background: #2e2c2c;
+
+}
+main .card1{
+    width: 500px;
+    height: 600px;
+    border-radius: 2%; 
+    position: relative;
+    border: 1px solid rgb(96, 126, 151);
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 700px 50px black;
+}
+.card, .card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+img{
+    left: 50%;
+    top: -70px;
+    transform: translate(-50%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    position:absolute;
+    border: 1px solid rgb(96, 126, 151);
+
+}
+.card1, .profilet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilet{
+    color:#fcf9f9;
+    margin-top: 50px;
+    margin-left:50px;
+    margin-right: 50px;
+    flex-direction: column;
+}
+.line {
+    display: flex;
+    align-items: center;
+    border-left: 2px solid #faf7f7;
+    height: 100px;
+    opacity: .5;
+    margin-top: 40px;
+    border-radius: 65%;
+}
+hr{
+    height: 2px;
+    width: 390px;
+    opacity: .5;
+    margin: 5px;
+    
+}
+.br {
+    display: block;
+    margin-bottom: 0.5em;
+
+    
+}
+.socmed{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+i{
+    font-size: 50px;
+    cursor: pointer;
+    transition: .10s;
+}
+i:hover{
+    color: rgb(28, 199, 199);
+    transform: scale(2.5);
+}
+a{
+    color: rgb(96, 126, 151);
+    margin: 10px;
+}
